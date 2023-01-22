@@ -158,7 +158,6 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.1)
   sqlite3 (~> 1.4)
-  tzinfo-data
 
 RUBY VERSION
    ruby 3.2.0p0
