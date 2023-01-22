@@ -12,4 +12,10 @@ class ProductsController < ApplicationController
 
     render json: ProductViewModel.from_product(product)
   end
+
+  def create
+    product = Product.create!(params.permit(:name))
+
+    render json: ProductViewModel.from_product(product)
+  end
 end
