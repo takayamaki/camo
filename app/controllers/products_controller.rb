@@ -18,4 +18,11 @@ class ProductsController < ApplicationController
 
     render json: ProductViewModel.from_product(product)
   end
+
+  def update
+    product = Product.find(params[:id])
+    product.update!(params.permit(:name))
+
+    render json: ProductViewModel.from_product(product)
+  end
 end
