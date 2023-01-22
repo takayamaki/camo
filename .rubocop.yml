@@ -1,5 +1,6 @@
 require:
   - rubocop-rails
+  - rubocop-rspec
 
 AllCops:
   Exclude:
@@ -78,6 +79,9 @@ Style/WordArray:
 Style/YodaExpression:
   Enabled: false
 
+Rails/FilePath:
+  EnforcedStyle: arguments
+
 Rails/HasAndBelongsToMany:
   Enabled: false
 
@@ -87,3 +91,36 @@ Rails/UnknownEnv:
     - development
     - test
     - staging
+
+RSpec/ContextWording:
+  Enabled: false
+
+RSpec/DescribedClass:
+  Enabled: true
+  EnforcedStyle: explicit
+
+RSpec/ExampleLength:
+  Max: 80
+
+RSpec/ExpectChange:
+  Enabled: true
+  EnforcedStyle: block
+
+RSpec/ImplicitSubject:
+  Enabled: true
+  EnforcedStyle: disallow
+
+RSpec/MultipleExpectations:
+  Max: 7
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 16
+
+RSpec/NestedGroups:
+  Max: 3
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/NoExpectationExample:
+  Enabled: false

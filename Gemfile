@@ -9,6 +9,8 @@ gem "sqlite3", "~> 1.4"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "rspec-rails"
   gem "rubocop"
   gem "rubocop-rails"
+  gem "rubocop-rspec"
 end
