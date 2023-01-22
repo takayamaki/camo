@@ -6,4 +6,10 @@ class ProductsController < ApplicationController
 
     render json: ProductViewModel.from_products(products)
   end
+
+  def show
+    product = Product.find(params[:id])
+
+    render json: ProductViewModel.from_product(product)
+  end
 end

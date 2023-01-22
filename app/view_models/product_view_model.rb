@@ -5,6 +5,10 @@ class ProductViewModel
     def from_products(products)
       products.map { |product| new(product) }
     end
+
+    def from_product(product)
+      new(product)
+    end
   end
 
   attr_reader :product
