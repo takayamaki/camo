@@ -11,4 +11,12 @@ class ApplicationController < ActionController::API
     render status: :unprocessable_entity,
            json: { errors: }
   end
+
+  rescue_from ActiveRecord::RecordNotDestroyed, with: :render_record_not_destroyed
+  def render_record_not_destroyed(error)
+    errors = error.record.errors.map(&:full_message)
+
+    render status: :unprocessable_entity,
+           json: { errors: }
+  end
 end

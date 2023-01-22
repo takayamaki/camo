@@ -25,4 +25,11 @@ class ProductsController < ApplicationController
 
     render json: ProductViewModel.from_product(product)
   end
+
+  def destroy
+    product = Product.find(params[:id])
+    product.destroy!
+
+    render json: ProductViewModel.from_product(product)
+  end
 end
