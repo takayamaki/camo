@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_22_152054) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_22_155225) do
   create_table "arrivals", force: :cascade do |t|
     t.integer "product_id"
     t.datetime "arrived_at"
@@ -57,6 +57,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_22_152054) do
     t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "shipment_items", force: :cascade do |t|
+    t.integer "shipment_id"
+    t.integer "in_process_id"
+    t.integer "amount_in_cases", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["in_process_id"], name: "index_shipment_items_on_in_process_id"
+    t.index ["shipment_id"], name: "index_shipment_items_on_shipment_id"
   end
 
   create_table "shipments", force: :cascade do |t|
