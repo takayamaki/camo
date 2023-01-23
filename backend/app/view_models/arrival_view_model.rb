@@ -5,6 +5,10 @@ class ArrivalViewModel
     def from_arrivals(arrivals)
       arrivals.map { |arrival| new(arrival) }
     end
+
+    def from_arrival(arrival)
+      new(arrival)
+    end
   end
 
   attr_reader :arrival
