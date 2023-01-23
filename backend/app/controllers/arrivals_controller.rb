@@ -25,4 +25,11 @@ class ArrivalsController < ApplicationController
 
     render json: ArrivalViewModel.from_arrival(arrival)
   end
+
+  def destroy
+    arrival = Arrival.find(params[:id])
+    arrival.destroy!
+
+    render json: ArrivalViewModel.from_arrival(arrival)
+  end
 end

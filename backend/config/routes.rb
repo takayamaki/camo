@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :arrivals, only: [:index, :show, :create, :update]
+  resources :arrivals
   resources :products
 end
