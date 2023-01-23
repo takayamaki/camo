@@ -12,4 +12,10 @@ class ArrivalsController < ApplicationController
 
     render json: ArrivalViewModel.from_arrival(arrival)
   end
+
+  def create
+    arrival = Arrival.create!(params.permit(:product_id, :amount_in_cases, :arrived_at))
+
+    render json: ArrivalViewModel.from_arrival(arrival)
+  end
 end
