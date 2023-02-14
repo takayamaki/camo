@@ -12,4 +12,10 @@ class CustomersController < ApplicationController
 
     render json: CustomerViewModel.from_customer(customer)
   end
+
+  def create
+    customer = Customer.create!(params.permit(:name))
+
+    render json: CustomerViewModel.from_customer(customer)
+  end
 end
