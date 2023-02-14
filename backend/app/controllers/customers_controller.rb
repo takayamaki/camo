@@ -18,4 +18,11 @@ class CustomersController < ApplicationController
 
     render json: CustomerViewModel.from_customer(customer)
   end
+
+  def update
+    customer = Customer.find(params[:id])
+    customer.update!(params.permit(:name))
+
+    render json: CustomerViewModel.from_customer(customer)
+  end
 end
