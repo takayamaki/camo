@@ -25,4 +25,11 @@ class CustomersController < ApplicationController
 
     render json: CustomerViewModel.from_customer(customer)
   end
+
+  def destroy
+    customer = Customer.find(params[:id])
+    customer.destroy!
+
+    render json: CustomerViewModel.from_customer(customer)
+  end
 end
