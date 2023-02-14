@@ -6,4 +6,10 @@ class CustomersController < ApplicationController
 
     render json: CustomerViewModel.from_customers(customers)
   end
+
+  def show
+    customer = Customer.find(params[:id])
+
+    render json: CustomerViewModel.from_customer(customer)
+  end
 end

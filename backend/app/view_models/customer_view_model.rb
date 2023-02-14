@@ -5,6 +5,10 @@ class CustomerViewModel
     def from_customers(customers)
       customers.map { |customer| new(customer) }
     end
+
+    def from_customer(customer)
+      new(customer)
+    end
   end
 
   attr_reader :customer
