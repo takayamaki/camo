@@ -29,7 +29,11 @@ RSpec.describe ArrivalsController do
 
     aggregate_failures do
       expect(response).to have_http_status(:not_found)
-      expect(response.body).to eq('404 Not Found')
+      expect(JSON.parse(response.body, symbolize_names: true)).to match(
+        errors: [
+          "No such Arrival"
+        ]
+      )
     end
   end
 end

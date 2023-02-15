@@ -2,7 +2,14 @@
 
 class ApplicationController < ActionController::API
   rescue_from ActiveRecord::RecordNotFound, with: :render_not_found
-  def render_not_found = render plain: '404 Not Found', status: :not_found
+  def render_not_found(error)
+    render status: :not_found,
+           json: {
+             errors: [
+               "No such #{error.model}",
+             ],
+           }
+  end
 
   rescue_from ActiveRecord::RecordInvalid, with: :render_record_invalid
   def render_record_invalid(error)
