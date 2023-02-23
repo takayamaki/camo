@@ -32,7 +32,7 @@ RSpec.describe ArrivalsController do
       expect(response).to have_http_status(:not_found)
       expect(JSON.parse(response.body, symbolize_names: true)).to match(
         errors: [
-          "No such Arrival"
+          'No such Arrival',
         ]
       )
     end

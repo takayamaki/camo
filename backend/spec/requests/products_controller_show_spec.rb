@@ -26,7 +26,7 @@ RSpec.describe ProductsController do
       expect(response).to have_http_status(:not_found)
       expect(JSON.parse(response.body, symbolize_names: true)).to match(
         errors: [
-          "No such Product"
+          'No such Product',
         ]
       )
     end
