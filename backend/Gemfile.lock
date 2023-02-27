@@ -196,14 +196,14 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  debug
-  puma (~> 6.0)
-  rails (~> 7.0.4, >= 7.0.4.1)
-  rspec-rails
+  debug (= 1.7.1)
+  puma (= 6.1.0)
+  rails (= 7.0.4.2)
+  rspec-rails (= 6.0.1)
   rubocop (= 1.43.0)
-  rubocop-rails
-  rubocop-rspec
-  sqlite3 (~> 1.4)
+  rubocop-rails (= 2.17.4)
+  rubocop-rspec (= 2.18.1)
+  sqlite3 (= 1.6.0)
 
 RUBY VERSION
    ruby 3.2.1p31
