@@ -8,7 +8,7 @@ RSpec.describe CustomersController do
 
     aggregate_failures do
       expect(response).to have_http_status(:ok)
-      expect(JSON.parse(response.body)).to be_empty
+      expect(JSON.parse(response.body, symbolize_names: true)).to be_empty
     end
   end
 
