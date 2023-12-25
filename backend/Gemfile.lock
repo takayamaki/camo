@@ -209,7 +209,7 @@ GEM
       rubocop (~> 1.41)
     rubocop-factory_bot (2.22.0)
       rubocop (~> 1.33)
-    rubocop-rails (2.23.0)
+    rubocop-rails (2.23.1)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
@@ -241,7 +241,7 @@ DEPENDENCIES
   rails (= 7.1.2)
   rspec-rails (= 6.1.0)
   rubocop (= 1.59.0)
-  rubocop-rails (= 2.23.0)
+  rubocop-rails (= 2.23.1)
   rubocop-rspec (= 2.22.0)
   sqlite3 (= 1.6.9)
 
