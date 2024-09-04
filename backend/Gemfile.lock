@@ -238,7 +238,7 @@ DEPENDENCIES
   sqlite3 (= 2.0.4)
 
 RUBY VERSION
-   ruby 3.3.4p94
+   ruby 3.3.5p100
 
 BUNDLED WITH
    2.3.25
