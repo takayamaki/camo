@@ -10,7 +10,7 @@ gem "sqlite3", "2.5.0"
 group :development, :test do
   gem "debug", "1.10.0", platforms: %i[ mri mingw x64_mingw ]
   gem "rspec-rails", "7.1.0"
-  gem "rubocop", "1.69.2"
+  gem "rubocop", "1.70.0"
   gem "rubocop-rails", "2.28.0"
   gem "rubocop-rspec", "3.3.0"
 end
