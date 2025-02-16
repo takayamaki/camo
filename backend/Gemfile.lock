@@ -213,8 +213,9 @@ GEM
       rack (>= 1.1)
       rubocop (>= 1.72.1, < 2.0)
       rubocop-ast (>= 1.38.0, < 2.0)
-    rubocop-rspec (3.4.0)
-      rubocop (~> 1.61)
+    rubocop-rspec (3.5.0)
+      lint_roller (~> 1.1)
+      rubocop (~> 1.72, >= 1.72.1)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
     sqlite3 (2.5.0-x86_64-linux-gnu)
@@ -241,7 +242,7 @@ DEPENDENCIES
   rspec-rails (= 7.1.1)
   rubocop (= 1.72.1)
   rubocop-rails (= 2.30.0)
-  rubocop-rspec (= 3.4.0)
+  rubocop-rspec (= 3.5.0)
   sqlite3 (= 2.5.0)
 
 RUBY VERSION

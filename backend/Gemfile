@@ -12,5 +12,5 @@ group :development, :test do
   gem "rspec-rails", "7.1.1"
   gem "rubocop", "1.72.1"
   gem "rubocop-rails", "2.30.0"
-  gem "rubocop-rspec", "3.4.0"
+  gem "rubocop-rspec", "3.5.0"
 end
