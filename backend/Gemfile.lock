@@ -87,7 +87,7 @@ GEM
     debug (1.11.1)
       irb (~> 1.10)
       reline (>= 0.3.8)
-    diff-lcs (1.5.1)
+    diff-lcs (1.6.2)
     drb (2.2.3)
     erb (2.2.3)
       cgi
@@ -105,7 +105,7 @@ GEM
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
     logger (1.7.0)
-    loofah (2.24.1)
+    loofah (2.25.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mail (2.8.1)
@@ -115,7 +115,9 @@ GEM
       net-smtp
     marcel (1.1.0)
     mini_mime (1.1.5)
-    minitest (5.26.0)
+    mini_portile2 (2.8.9)
+    minitest (6.0.1)
+      prism (~> 1.5)
     net-imap (0.5.12)
       date
       net-protocol
@@ -125,8 +127,9 @@ GEM
       timeout
     net-smtp (0.5.1)
       net-protocol
-    nio4r (2.7.4)
-    nokogiri (1.18.10-x86_64-linux-gnu)
+    nio4r (2.7.5)
+    nokogiri (1.18.10)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     parallel (1.27.0)
     parser (3.3.10.0)
@@ -189,9 +192,9 @@ GEM
     regexp_parser (2.11.3)
     reline (0.6.3)
       io-console (~> 0.5)
-    rspec-core (3.13.3)
+    rspec-core (3.13.6)
       rspec-support (~> 3.13.0)
-    rspec-expectations (3.13.3)
+    rspec-expectations (3.13.5)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-mocks (3.13.2)
@@ -238,7 +241,9 @@ GEM
     tsort (0.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    unicode-display_width (2.6.0)
+    unicode-display_width (3.2.0)
+      unicode-emoji (~> 4.1)
+    unicode-emoji (4.2.0)
     uri (1.0.4)
     useragent (0.16.11)
     websocket-driver (0.8.0)
@@ -261,7 +266,7 @@ DEPENDENCIES
   sqlite3 (= 2.9.0)
 
 RUBY VERSION
-   ruby 3.4.8p72
+   ruby 4.0.0p0
 
 BUNDLED WITH
    2.3.25
